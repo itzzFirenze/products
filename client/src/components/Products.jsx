@@ -9,7 +9,7 @@ const Products = () => {
 
    const fetchProducts = async () => {
       try {
-         const res = await fetch('http://localhost:3000/products');
+         const res = await fetch('https://products-backend-bem0.onrender.com/products');
          const data = await res.json();
          setProducts(data.data);
       } catch (error) {

@@ -18,7 +18,7 @@ const AddProduct = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-         const res = await fetch("http://localhost:3000/products", {
+         const res = await fetch("https://products-backend-bem0.onrender.com/products", {
             method: "POST",
             headers: {
                "Content-Type": "application/json"
